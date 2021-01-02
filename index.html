@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cloud 9 Sweets</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="mainnav" id="dropdownClick">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonals">Testimonals</a></li>
+        <li><a href="#signup"></a></li>
+        <li class="mainnav-right"><a href="#signin">Sign In</a></li>
+        <li class="mainnav-right"><a href="#signup">Sign Up</a></li>
+        <li class="dropdownIcon">
+          <a href="javascript:void(0)" onclick="dropdownMenu()">&#9776;</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="slideshow-container">
+      <div class="sweetSlides fade">
+        <div class="slidetext">1 / 3</div>
+        <img id="sweets" src="./sweets/candy.jpg" />
+        <div class="text">Candies</div>
+      </div>
+
+      <div class="sweetSlides fade">
+        <div class="slidetext">2 / 3</div>
+        <img id="sweets" src="./sweets/chocobombs.jpg" />
+        <div class="text">Choco Bombs</div>
+      </div>
+
+      <div class="sweetSlides fade">
+        <div class="slidetext">3 / 3</div>
+        <img id="sweets" src="./sweets/mixbombs.jpg" />
+        <div class="text">Variety Bombs</div>
+      </div>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div class="repcontainer">
+      <div class="row">
+        <div class="col-7">
+          <article>
+            <p>
+              <i>
+                Welcome to Cloud 9 Sweets! It's your girl Tae brining you the
+                treats that pack the most sweets! From candies to cones and
+                cakes to bombs. We got what you need to make the most out of any
+                celebration or spontaneous indulgence. Don't be shy, come on by!
+              </i>
+            </p>
+          </article>
+        </div>
+        <div class="icon">
+          <iframe
+            src="https://giphy.com/embed/BBFJQKmBF8ACc"
+            width="480"
+            height="480"
+            frameborder="0"
+            class="giphy-embed"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footNote">
+      <div class="row">
+        <div class="col-4 mobilestack">
+          <h1><i>Company</i></h1>
+          <ul>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Testimonals</li>
+          </ul>
+        </div>
+        <div class="col-4 mobilestack">
+          <h1><i>Sweets</i></h1>
+          <ul>
+            <li>Cookies</li>
+            <li>Candies</li>
+            <li>Cones</li>
+          </ul>
+        </div>
+        <div class="col-4 mobilestack">
+          <h1><i>Contact</i></h1>
+          <ul>
+            <li>Email</li>
+            <li>Phone</li>
+            <li>Order Requests</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="sweets.js"></script>
+  </body>
+</html>

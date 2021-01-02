@@ -1,0 +1,322 @@
+/* Nav props */
+nav,
+footer {
+  display: block;
+}
+
+nav {
+  width: 100%;
+  margin: 0;
+}
+
+nav ul {
+  background-color: mediumorchid;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+ul.mainnav li {
+  list-style: none;
+  float: left;
+}
+
+ul.mainnav li.mainnav-right {
+  float: right;
+}
+
+ul.mainnav li a {
+  display: block;
+  text-decoration: none;
+  min-height: 20px;
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+ul.topnav li a:hover {
+  background-color: purple;
+  color: silver;
+}
+
+ul.mainnav li.dropdownIcon {
+  display: none;
+}
+
+/* Body */
+body {
+  background-image: url("./sweets/layout.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.row::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+.repcontainer {
+  position: relative;
+  margin: auto;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1, 2;
+  color: indigo;
+}
+
+article p {
+  font-size: 35px;
+  padding: 10px;
+  background-color: mediumorchid;
+}
+
+iframe {
+  float: right;
+}
+
+div.icon iframe {
+  display: block;
+  margin: auto;
+}
+
+/* Slideshow */
+
+* {
+  box-sizing: border-box;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.sweetSlides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: black;
+}
+
+.text {
+  color: blueviolet;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 8px;
+  width: 30%;
+  text-align: center;
+  border: solid 10px mediumorchid;
+  background-color: white;
+}
+
+.slidetext {
+  color: blueviolet;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: purple;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Footer */
+
+footer.footNote {
+  background-color: mediumorchid;
+  color: indigo;
+  padding-left: 10%;
+}
+
+footer.footNote h1 {
+  font-size: 35px;
+}
+
+footer.footNote ul {
+  list-style: none;
+  text-align: left;
+  padding-left: 0;
+}
+
+footer.footNote ul li {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+/* Mobile Usage */
+
+@media screen and (max-width: 680px) {
+  ul.mainnav li:not(:nth-child(1)) {
+    display: none;
+  }
+
+  ul.mainnav li.dropdownIcon {
+    display: block;
+    float: right;
+  }
+
+  ul.mainnav.responsive li.dropdownIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  ul.mainnav.responsive {
+    position: relative;
+  }
+
+  ul.mainnav.responsive li {
+    display: inline;
+    float: none;
+  }
+
+  ul.mainnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+
+  article p {
+    font-size: 25px;
+  }
+
+  .col-6,
+  .col-4,
+  .col-7,
+  .col-5 {
+    width: 100%;
+    margin: 0;
+  }
+
+  div.mobilestack {
+    width: 50%;
+    display: block;
+  }
+
+  div.box{
+    padding: 5px;
+    display: block;
+  }
+
+  div.icon {
+    margin: 10px;
+  }
+
+  div.icon iframe {
+    width: 100;
+  }
+
+}
